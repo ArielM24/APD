@@ -3,7 +3,6 @@ class stackState{
     private:
     int state;
     stack<char> data;
-    char pop;
 
     public:
         stackState();
@@ -18,7 +17,6 @@ class stackState{
 stackState::stackState(){
     state=0;
     data=stack<char>();
-    pop=0;
 }
 stackState::~stackState(){
 }

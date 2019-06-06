@@ -34,6 +34,7 @@ class RegularLenguage{
 		Alphabet onlyUsedAlphabet();
 		int indexOf(string);
 		void addAll(vector<string>);
+		int size();
 };
 RegularLenguage::RegularLenguage(){	
 	alphabet= Alphabet();
@@ -132,7 +133,7 @@ vector<string> RegularLenguage::getWords(){
 	return words;
 }
 void RegularLenguage::print(){
-	alphabet.print();
+	//alphabet.print();
 	cout<<"L = {";
 	for(int i=0;i<words.size();i++){
 		cout<<words[i];
@@ -231,4 +232,7 @@ int RegularLenguage::indexOf(string word){
 		}
 	}
 	return -1;
+}
+int RegularLenguage::size(){
+	return words.size();
 }

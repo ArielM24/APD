@@ -209,6 +209,16 @@ vector<string> splitString(string Origin,string separator,int maxStrings){
 	}
 	return split;
 }
+string eraseEnd(string Origin,char end){
+	string aux1 = Origin;
+	while(aux1[aux1.size()-1]==end){
+		aux1.pop_back();
+		if(!aux1.size()){
+			break;
+		}
+	}
+	return aux1;
+}
 class NumericString{
 	private:
 		vector<string> digitsDefault();
