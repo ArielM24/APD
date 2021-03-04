@@ -14,6 +14,6 @@
 
 int main(){
     APD automata=APD("APDS/automataPilaN.ap");
-    automata.print();
-	
+    //automata.print();
+	cout<<automata.evaluation("aacba")<<endl;
 }
